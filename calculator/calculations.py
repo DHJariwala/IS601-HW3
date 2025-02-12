@@ -18,8 +18,8 @@ class Calculations:
         return cls.history
 
     @classmethod
-    def get_latest_calculation(cls) -> Calculation:
-        return cls.history[-1]
+    def get_latest(cls) -> Calculation:
+        return None if not cls.history else cls.history[-1]
 
     @classmethod
     def get_calculation_count(cls) -> int:
