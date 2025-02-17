@@ -28,11 +28,6 @@ class Calculations:
         return None if not cls.history else cls.history[-1]
 
     @classmethod
-    def get_calculation_count(cls) -> int:
-        '''This function returns the number of Calculation objects in the collection.'''
-        return len(cls.history)
-
-    @classmethod
     def find_by_operation(cls, operation_name: str) -> List[Calculation]:
         '''This function returns a list of Calculation objects that match the specified operation.'''
         return [calculation for calculation in cls.history if calculation.operation.__name__ == operation_name]
