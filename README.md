@@ -17,6 +17,6 @@ Rubrics Checklist: <br>
 ✅ All Pytest, Pylint and Coverage passed <br> <br>
 
 Rubrics Checklist: <br>
-✅ 30 Points - Faker
-✅ 30 Points - Test Data Generation
-✅ 40 Points - User Input
+✅ 30 Points - Faker <br>
+✅ 30 Points - Test Data Generation <br>
+✅ 40 Points - User Input <br>
