@@ -1,6 +1,7 @@
-# IS-601 Homework 3
+# IS-601 Calculator Homework Submissions
 Submitted by: Dev Hetal Jariwala
 
+## Homework 3
 ✅ All Pytest, Pylint and Coverage passed <br> <br>
 
 Rubrics Checklist: <br>
@@ -11,3 +12,11 @@ Rubrics Checklist: <br>
 ✅ 15 Points for having a calculation history to store calculation instances <br>
 ✅ 10 Points for having the convenience methods on the calculations class to manage the history <br>
 ✅ 10 Points for using parameterized test data <br>
+
+# Homework 4
+✅ All Pytest, Pylint and Coverage passed <br> <br>
+
+Rubrics Checklist: <br>
+✅ 30 Points - Faker
+✅ 30 Points - Test Data Generation
+✅ 40 Points - User Input
