@@ -3,7 +3,7 @@ Submitted by: Dev Hetal Jariwala
 
 ## Homework 3
 ✅ All Pytest, Pylint and Coverage passed <br> <br>
-
+**Branch:** Was branch main previously <br> <br>
 Rubrics Checklist: <br>
 ✅ 20 Points for (add subtract, multiply, divide) <br>
 ✅ 10 Points for exception throwing and testing on divide by zero <br>
@@ -15,6 +15,8 @@ Rubrics Checklist: <br>
 
 # Homework 4
 ✅ All Pytest, Pylint and Coverage passed <br> <br>
+
+**Branch:** hw4 <br> <br>
 
 Rubrics Checklist: <br>
 ✅ 30 Points - Faker <br>
