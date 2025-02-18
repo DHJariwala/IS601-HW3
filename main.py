@@ -23,8 +23,6 @@ def calculate_and_print(a, b, operation_name):
             print(f"Unknown operation: {operation_name}")
     except InvalidOperation:
         print(f"Invalid number input: {a} or {b} is not a valid number.")
-    except ZeroDivisionError:
-        print("Error: Division by zero.")
     except Exception as e: # Catch-all for unexpected errors
         print(f"An error occurred: {e}")
 
@@ -36,5 +34,5 @@ def main():
     _, a, b, operation = sys.argv
     calculate_and_print(a, b, operation)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     main()
