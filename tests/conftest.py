@@ -24,13 +24,6 @@ def generate_test_data(num_records):
         operation_func = operations_mappings[operation_name]
         if operation_func == divide:
             b = Decimal('1') if b == Decimal('0') else b
-        # try:
-        #     if operation_func == divide and b == Decimal('0'):
-        #         expected = 'ZeroDivisionError'
-        #     else:
-        #         expected = operation_func(a, b)
-        # except ZeroDivisionError:
-        #     expected = 'ZeroDivisionError'
         expected = operation_func(a, b)
         yield a, b, operation_name, operation_func, expected
 
