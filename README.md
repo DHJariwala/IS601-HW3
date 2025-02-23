@@ -22,3 +22,19 @@ Rubrics Checklist: <br>
 ✅ 30 Points - Faker <br>
 ✅ 30 Points - Test Data Generation <br>
 ✅ 40 Points - User Input <br>
+
+# Homework 5
+✅ All Pytest, Pylint and Coverage passed <br> <br>
+
+**Branch:** hw-5 <br> <br>
+
+Rubrics Checklist: <br>
+- **Testing (50 Points):**
+  - ✅ Comprehensive test coverage near 100% average coverage: 50 Points <br>
+
+- **Functionality (50 Points):**
+  - ✅ Implementation of command pattern and REPL: 10 Points<br>
+  - ✅ Interactive calculator commands (add, subtract, multiply, divide): 20 Points<br>
+  - ✅ Successful plugin architecture integration for dynamic command loading: 20 Points<br>
+
+✅ Ensure that the functionality aligns with the requirements and demonstrates the effective use of the command pattern and plugin architecture as outlined in the instructor videos.
