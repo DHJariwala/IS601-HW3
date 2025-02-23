@@ -2,7 +2,7 @@
 import sys
 from unittest import mock
 import pytest
-from main import calculate_and_print, main  # Ensure this import matches your project structure
+from old import calculate_and_print, main  # Ensure this import matches your project structure
 
 # Parameterize the test function to cover different operations and scenarios, including errors
 @pytest.mark.parametrize("a_string, b_string, operation_string, expected_string", [

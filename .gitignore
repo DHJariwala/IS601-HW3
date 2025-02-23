@@ -1,2 +1,5 @@
 .DS_Store
 venv/
+**cache**
+old.py
+**/__pycache__**
