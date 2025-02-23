@@ -123,3 +123,99 @@ def test_add_command_invalid_input(monkeypatch, capsys):
 
     # Assert that the error message was printed
     assert "Invalid number input: a or b is not a valid number." in captured.out
+
+def test_subtract_command(monkeypatch, capsys):
+    """Test that AddCommand.execute() correctly adds two numbers"""
+    # Mock input to provide test values
+    inputs = iter(['subtract',"10.5", "5.5", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the correct result was printed
+    assert "10.5 - 5.5 = 5.0" in captured.out
+
+def test_subtract_command_invalid_input(monkeypatch, capsys):
+    """Test that AddCommand.execute() handles invalid input gracefully"""
+    # Mock input to provide invalid test values
+    inputs = iter(['subtract', "a", "b", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the error message was printed
+    assert "Invalid number input: a or b is not a valid number." in captured.out
+
+def test_multiply_command(monkeypatch, capsys):
+    """Test that AddCommand.execute() correctly adds two numbers"""
+    # Mock input to provide test values
+    inputs = iter(['multiply',"1", "2", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the correct result was printed
+    assert "1 x 2 = 2" in captured.out
+
+def test_multiply_command_invalid_input(monkeypatch, capsys):
+    """Test that AddCommand.execute() handles invalid input gracefully"""
+    # Mock input to provide invalid test values
+    inputs = iter(['multiply', "a", "b", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the error message was printed
+    assert "Invalid number input: a or b is not a valid number." in captured.out
+
+def test_divide_command(monkeypatch, capsys):
+    """Test that AddCommand.execute() correctly adds two numbers"""
+    # Mock input to provide test values
+    inputs = iter(['divide',"2", "2", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the correct result was printed
+    assert "2 / 2 = 1" in captured.out
+
+def test_divide_command_invalid_input(monkeypatch, capsys):
+    """Test that AddCommand.execute() handles invalid input gracefully"""
+    # Mock input to provide invalid test values
+    inputs = iter(['divide', "a", "b", 'exit'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    app = App()
+    with pytest.raises(SystemExit):
+        app.start()  # Assuming App.start() is now a static method based on previous discussions
+
+    # Capture printed output
+    captured = capsys.readouterr()
+
+    # Assert that the error message was printed
+    assert "Invalid number input: a or b is not a valid number." in captured.out

@@ -15,5 +15,3 @@ class DivideCommand(Command):
             print(f"{a} / {b} = {result}")
         except InvalidOperation:
             print(f"Invalid number input: {a} or {b} is not a valid number.")
-        except Exception as e:
-            print(f"An error occurred: {e}")
