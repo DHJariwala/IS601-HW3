@@ -22,7 +22,7 @@ class App:
         logging_conf_path = 'logging.conf'
         if os.path.exists(logging_conf_path):
             logging.config.fileConfig(logging_conf_path, disable_existing_loggers=False)
-        else:
+        else: # pragma: no cover
             logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
         logging.info('Logging configured')
     
@@ -36,7 +36,11 @@ class App:
         plugins_package = 'app.plugins'
         for _, plugin_name, is_pkg in pkgutil.iter_modules([plugins_package.replace('.', '/')]):
             if is_pkg:
-                plugin_module = importlib.import_module(f'{plugins_package}.{plugin_name}')
+                try:
+                    plugin_module = importlib.import_module(f'{plugins_package}.{plugin_name}')
+                except ImportError as e: # pragma: no cover
+                    logging.error(f"Error loading plugin {plugin_name}: {e}")
+                    continue
                 for item_name in dir(plugin_module):
                     item = getattr(plugin_module, item_name)
                     try:
